@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* Primary colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral colors */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    --font-size: 15px;
+
+    --poppins-font: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--very-light-gray);
+    font-family: var(--poppins-font);
+    font-size: var(--font-size);
+
+}
+
+.top-info {
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    padding: 1rem;
+}
+
+.main-header {
+    margin-bottom: 1rem;
+}
+
+.main-header h1 {
+    font-weight: 200;
+    color: var(--very-dark-blue);
+}
+
+.main-header h2 {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+.about {
+    padding: 1rem;
+    color: var(--grayish-blue);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    
+}
+
+.block {
+    border: 1px solid white;
+    border-radius: 8px;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    margin: 3rem;
+    width: 80vw;
+    box-shadow: 0 5px 10px var(--grayish-blue);
+}
+
+.block-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.block p {
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+.block-paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 0.2rem;
+}
+
+.icon-holder {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 2rem;
+}
+
+img {
+    transform: scale(0.8);
+}
+
+.supervisor {
+    border-top: 5px solid var(--cyan);
+    border-radius: 8px;
+}
+
+.team-builder {
+    border-top: 5px solid var(--red);
+    border-radius: 8px;
+}
+
+.karma {
+    border-top: 5px solid var(--orange);
+    border-radius: 8px;
+}
+
+.calculator {
+    border-top: 5px solid var(--blue);
+    border-radius: 8px;
+}
