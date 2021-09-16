@@ -114,10 +114,11 @@ h3 {
     justify-content: flex-end;
     align-items: flex-end;
     padding-top: 2rem;
+    
 }
 
 img {
-    transform: scale(0.8);
+    transform: scale(0.75);
 }
 
 .supervisor {
