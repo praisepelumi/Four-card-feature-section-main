@@ -140,3 +140,86 @@ img {
     border-top: 5px solid var(--blue);
     border-radius: 8px;
 }
+
+@media only screen and (min-width: 960px) {
+    body {
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        
+    }
+    .top-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .main-header h2 {
+        font-size: 2rem;
+    }
+
+    .about {
+        font-size: 1rem;
+        max-width: 46vw;
+    }
+
+    .block {
+        padding: 2rem;
+        margin: 1rem;
+        /* width: 80vw; */
+        max-width: 17.5rem;
+        max-height: 20rem;
+        
+    }
+   
+
+    .feature-blocks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+          '     .     team-builder     .     '
+          'supervisor team-builder calculator'
+          'supervisor    karma     calculator'
+          '     .        karma         .     ';
+        grid-column-gap: 0px; 
+          /* gap: 30px; */
+         
+    }
+
+
+    .supervisor {
+        grid-area: supervisor;
+    }
+
+    .team-builder {
+        grid-area: team-builder;
+    }
+
+    .karma {
+        grid-area: karma;
+    }
+
+    .calculator {
+        grid-area: calculator;
+       
+    }
+    .attribution {
+        margin-top: 3rem;
+    }
+
+
+    
+
+
+    
+  
+
+    
+}
